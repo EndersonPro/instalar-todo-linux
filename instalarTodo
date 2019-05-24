@@ -35,6 +35,7 @@ sudo apt install ruby-railties -y
 sudo apt install ruby-bundler -y
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install git-extras -y
+sudo npm cache clean --force
 sudo npm install --global git-open
 sudo npm i -g ionic@latest
 sudo npm i -g cordova
