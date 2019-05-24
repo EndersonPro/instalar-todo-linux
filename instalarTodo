@@ -5,8 +5,10 @@ sudo apt install git -y
 curl -L https://get.oh-my.fish | fish
 omf install agnoster
 sudo apt install fonts-firacode -y
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
 sudo apt-get install nodejs -y
+sudo apt install build-essential
 sudo apt-get install gcc g++ make -y
 curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
