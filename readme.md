@@ -25,12 +25,39 @@ sudo npm i -g cordova
 
 ## Instalación de [_【 React Native CLI 】_](https://facebook.github.io/react-native/)
 ```sh
-sudo npm install -g react-native-cli
+sudo npm i -g react-native-cli
 ```
 
 ## Instalación de [_【 EXPO CLI 】_](https://docs.expo.io/versions/latest/)
 ```sh
-sudo npm install -g expo-cli
+sudo npm i -g expo-cli
+```
+
+## Instalación de [_【 LAMP 】_]()
+```sh
+sudo apt-get update
+sudo apt-get install apache2
+sudo ufw enable
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+sudo apt-get install php libapache2-mod-php php-mysql
+sudo service apache2 restart
+sudo chown -R $USER:root /var/www/
+sudo apt-get install phpmyadmin
+
+sudo nano /etc/apache2/apache2.conf
+#Agregar la siguiente línea: 
+Include /etc/phpmyadmin/apache.conf
+```
+
+```sh
+#Setear el usuario root al phpmyadmin
+sudo mysql -u root -p
+use mysql
+
+update user set authentication_string=PASSWORD("your_password") where user = 'root';
+update user set plugin='mysql_native_password' where user = 'root';
+flush privileges;
 ```
 
 ## Instalación de [_【 RUBY + RUBY ON RAILS 】_]()
