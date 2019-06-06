@@ -64,6 +64,7 @@ flush privileges;
 ```sh
 sudo apt install composer -y
 sudo apt-get install php7.2-zip
+sudo chown -R $(whoami) ~/.composer
 composer global require laravel/installer
 ```
 
