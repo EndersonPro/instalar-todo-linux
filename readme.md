@@ -60,14 +60,16 @@ update user set plugin='mysql_native_password' where user = 'root';
 flush privileges;
 ```
 
-## Instalación de [_【 RUBY + RUBY ON RAILS 】_]()
+## Instalación de [_【 COMPOSER + LARAVEL 】_](https://laravel.com)
 ```sh
-
+sudo apt install composer -y
+sudo apt-get install php7.2-zip
+composer global require laravel/installer
 ```
 
 ## Instalación de [_【  】_]()
 ```sh
 ```
 
-## EQUIPO
+## EQUIPO [_NoEMEC_](https://www.noemec.com)
 <img src="https://www.noemec.com/members.svg">
